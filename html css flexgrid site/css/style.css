@@ -1,0 +1,151 @@
+.container{
+    /* border: 2px solid black; */
+    margin: auto;
+}
+/* img{
+    width: 100%;
+} */
+
+body{
+    font-family:'open-sans',sans-serif;
+    font-size: 17px;
+    line-break: 1.3em;
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+/* common classes */
+.primary-text{
+    color: #56a79a;
+}
+/* header */
+#main-header{
+    border-bottom: 1px solid #56a79a;
+}
+/* navbar */
+#navbar{
+    text-transform: uppercase;
+    
+}
+#navbar li{
+    display: inline;
+    padding-right: 20px;
+    list-style-type: none;
+
+}
+#navbar li a{
+    text-decoration: none;
+    color: #888;
+}
+#navbar li.current a,#navbar a:hover{
+    color: #56a79a;
+    border-bottom: 3px solid  #56a79a;
+
+}
+/* showcase */
+#showcase{
+    background: url(../images/showcase.jpg) no-repeat center center/cover;
+    border-bottom: 1px solid #56a79a;
+    margin-bottom: 30px;
+    
+}
+#showcase .row{
+    height: 600px;
+}
+#showcase h1{
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 20px;
+    /* color: #ffff; */
+}
+#showcase p{
+    color: #ffff;
+    font-size: 15px;
+}
+#showcase .showcase-content{
+    background: #333;
+    color: #fff;
+    border-radius: 80px;
+    padding: 30px;
+    opacity: 0.88;
+}
+/* feature */
+#feature h2{
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+#feature p{
+    margin: 0;
+    margin-bottom: 30px;
+    color: #888 ;
+}
+#feature .fab{
+    font-size: 60px;
+    color: #56a79a;
+}
+/* info */
+#info{
+    background: #333  url("../images/info.jpg") no-repeat center center/cover ;
+    color: #fff;
+   
+}
+img{
+    width: 70%;
+}
+#info h2{
+    margin: 0;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+#info ul{
+    list-style-type: none;
+}
+#info li{
+    line-height: 2em;
+    font-size: 18px;
+}
+/* company */
+#company{
+    background: #333;
+    color: #fff;
+    padding: 10px 0px;
+}
+#company h4{
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+#company ul{
+    padding: 0px;
+    list-style-type: none;
+    line-height: 2em;
+}   
+#company  input[type="text"]{
+    padding: 8px;
+}
+#company button{
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    border: 0;    
+}
+/* foooter */
+.main-footer{
+    background: #56a79a;
+    color: white;
+}
+/* media query */
+@media(max-width:770px){
+    #company .row{
+        padding-left:30px;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:390px)
+{
+    #navbar li{
+        display:flex;
+        line-height: 2em;
+        
+    }
+}
